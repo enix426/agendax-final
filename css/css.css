@@ -1,0 +1,298 @@
+/* bouton setting par default*/
+
+button {
+    border-radius: 30px;
+    margin: .20rem;
+    font-size: 1rem;
+    background: #ffffff;
+    border: 1px solid #666666;
+}
+
+button:hover {
+    background: #666666;
+    color: #ffffff;
+}
+
+
+/*icone*/
+
+.fa {
+    font-size: 3em;
+}
+
+
+/* bouton next et prev */
+
+#prev {
+    margin-right: 25px;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+}
+
+#next {
+    margin-left: 25px;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+}
+
+#changeHeure {
+    background-color: white;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: auto;
+}
+
+#separation table td,
+#separation table tr {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+ul {
+    height: 50px;
+    overflow: auto;
+    list-style-type: none;
+}
+
+.liTitre {
+    list-style-type: none;
+}
+
+#aligner,
+#affichageDate {
+    line-height: 0px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+#separation {
+    display: flex;
+    justify-content: center;
+    /* border:3px black solid;  */
+    border-radius: 0 50px 0 0;
+    margin-left: 50px;
+}
+
+#menu {
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+}
+
+#openbtn,
+#openbtn1,
+#afficher-mois,
+#afficher-semaine,
+#changeHeure {
+    margin-left: 25px;
+}
+
+
+/**************-SIDE-BAR-SECTION-MODIFICATION-AJOUTER*****************/
+
+p {
+    cursor: pointer;
+}
+
+h3 {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#modificationEvent td {
+    border: 0px solid black;
+    height: 0px;
+    padding: 15px;
+}
+
+#mySidebar1,
+#mySidebar {
+    border-right: 3px black solid;
+}
+
+
+/* icone dans section modifier */
+
+.far {
+    color: rgb(15, 15, 15);
+    text-shadow: 1px 1px 1px rgb(97, 97, 97);
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+.fas {
+    color: rgb(1, 196, 255);
+    text-shadow: 1px 1px 1px rgb(172, 84, 84);
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+.fas:hover {
+    color: rgb(38, 17, 133);
+    cursor: pointer;
+}
+
+#changeHeure {}
+
+
+/* side bar option par defaul*/
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.closebtn1 {
+    float: right;
+    cursor: pointer;
+}
+
+.openbtn,
+.openbtn1,
+.openbtn2,
+.openbtn3 {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+/* section ajouter */
+
+#eventForm,
+#btnAjoutEvent {
+    margin-left: 90px;
+}
+
+#btnAjoutEvent,
+#btnModifierEvenement {
+    margin-top: 25px;
+}
+
+#modificationEvent {
+    margin-left: 25px;
+}
+
+
+/* sur petite ecrans, hauteur plus petit que 450px*/
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+    .sidebar1 a {
+        font-size: 18px;
+    }
+    .sidebar1 {
+        padding-top: 15px;
+    }
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 1000px;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 4%;
+    width: 60%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
